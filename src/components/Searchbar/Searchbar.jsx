@@ -16,7 +16,7 @@ export default function Searchbar({ onSubmit }) {
   };
 
   return (
-    <header className={s.Searchbar}>
+    <div className={s.Searchbar}>
       <form className={s.SearchForm} onSubmit={handleSubmit}>
         <button type="submit" className={s['SearchForm-button']}>
           <span className={s['SearchForm-button-label']}>Search</span>
@@ -33,10 +33,9 @@ export default function Searchbar({ onSubmit }) {
           placeholder="Search images and photos"
         />
       </form>
-    </header>
+    </div>
   );
 }
-
 
 Searchbar.propTypes = {
   onSubmit: PropTypes.func.isRequired,
